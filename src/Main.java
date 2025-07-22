@@ -14,7 +14,10 @@ public class Main {
         Scanner leer = new Scanner(System.in);
         System.out.println("Cual es el precio del producto??");
         precio = leer.nextInt();
-        // realizar la tarea hasta el lunes
+        System.out.println("En que estado se encuentra el producto?");
+        estado = leer.nextBoolean();
+        System.out.println("Cuantos productos hay?");
+        cantidad = leer.nextInt();
 
     }
 }
