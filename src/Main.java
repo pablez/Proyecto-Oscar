@@ -18,6 +18,11 @@ public class Main {
         //oscar111
 
 
+
+
+
+        
+
         //tienes que hacer datos de entrada y salida
         Scanner leer = new Scanner(System.in);
 
@@ -32,6 +37,18 @@ public class Main {
         cantidad = leer.nextInt();
         System.out.println("Descripcion del producto");
         descripcion = leer.next();
+
+
+        System.out.println("Ingrese su usuario");
+        usuario = leer.next();
+        System.out.println("Ingrese su contraseña");
+        password = leer.next();
+
+
+
+
+
+
 
     }
 }
