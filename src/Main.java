@@ -43,6 +43,15 @@ public class Main {
         usuario = leer.next();
         System.out.println("Ingrese su contraseña");
         password = leer.next();
+        if (usuario == usuario);
+        {
+            System.out.println("Sesion iniciada");
+        }
+        if (usuario != usuario)
+        {
+            System.out.println("Valio chetos ppodgfpokkfdpogfd");
+        }
+
 
 
 
