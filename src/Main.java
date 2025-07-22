@@ -38,5 +38,17 @@ public class Main {
         System.out.println("Descripcion del producto");
         descripcion = leer.next();
 
+
+        System.out.println("Ingrese su usuario");
+        usuario = leer.next();
+        System.out.println("Ingrese su contraseña");
+        password = leer.next();
+
+
+
+
+
+
+
     }
 }
