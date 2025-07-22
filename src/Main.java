@@ -6,18 +6,32 @@ public class Main {
 
         int precio = 0;
         String producto;
-        boolean estado = true;
-        int cantidad;
-        String descripcion;
+        boolean estado = true;// true o false {0, 1}
+        int cantidad; //0123 -1-2-3
+        double precio2 = 0.0; //10.5, 25.5, 13.5
+        String descripcion;//abcABC123
+
+        String usuario = "OscarGamer";
+        String password = "oscar111";
+        
+        //OscarGamer
+        //oscar111
+
 
         //tienes que hacer datos de entrada y salida
         Scanner leer = new Scanner(System.in);
+
+        //Seguridad
+        System.out.println("Como se llamara el producto? ");
+        producto = leer.next();
         System.out.println("Cual es el precio del producto??");
         precio = leer.nextInt();
         System.out.println("En que estado se encuentra el producto?");
         estado = leer.nextBoolean();
         System.out.println("Cuantos productos hay?");
         cantidad = leer.nextInt();
+        System.out.println("Descripcion del producto");
+        descripcion = leer.next();
 
     }
 }
