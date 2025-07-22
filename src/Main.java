@@ -14,10 +14,7 @@ public class Main {
         Scanner leer = new Scanner(System.in);
         System.out.println("Cual es el precio del producto??");
         precio = leer.nextInt();
-<<<<<<< HEAD
-=======
         // realizar la tarea hasta el lunes
->>>>>>> af5fde0 (tarea para oscar)
 
     }
 }
