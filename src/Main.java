@@ -19,10 +19,5 @@ public class Main {
         System.out.println("Cuantos productos hay?");
         cantidad = leer.nextInt();
 
-
-
-
-
-
     }
 }
