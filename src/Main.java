@@ -11,17 +11,13 @@ public class Main {
         double precio2 = 0.0; //10.5, 25.5, 13.5
         String descripcion;//abcABC123
 
-        String usuario = "OscarGamer";
-        String password = "oscar111";
-        
+        String usuario_Original = "OscarGamer";
+        String password_Original = "oscar111";
+
+        String usuario ;
+        String password;
         //OscarGamer
         //oscar111
-
-
-
-
-
-        
 
         //tienes que hacer datos de entrada y salida
         Scanner leer = new Scanner(System.in);
@@ -38,11 +34,11 @@ public class Main {
         System.out.println("Descripcion del producto");
         descripcion = leer.next();
 
-
         System.out.println("Ingrese su usuario");
         usuario = leer.next();
         System.out.println("Ingrese su contraseña");
         password = leer.next();
+
         if (usuario == usuario);
         {
             System.out.println("Sesion iniciada");
@@ -51,6 +47,9 @@ public class Main {
         {
             System.out.println("Valio chetos ppodgfpokkfdpogfd");
         }
+
+
+        System.out.println("Mi usuario es: "+ usuario + " Mi contraseña es: "+password);
 
 
 
