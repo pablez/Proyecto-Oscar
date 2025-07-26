@@ -35,13 +35,13 @@ public class Main {
          * <=
          *
          */
-        if (usuario_Original.equals(usuario))//OscarGamer = pablo
+        if (usuario_Original.equals(usuario) && password_Original.equals(password))//OscarGamer = pablo
         {
             System.out.println("Sesion iniciada");
         }
-        if (usuario != usuario)
+        else
         {
-            System.out.println("Valio chetos ppodgfpokkfdpogfd");
+            System.out.println("Valio chetos ERROR AL INICIAR SESION");
         }
 
 
