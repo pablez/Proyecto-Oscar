@@ -22,6 +22,30 @@ public class Main {
         //tienes que hacer datos de entrada y salida
         Scanner leer = new Scanner(System.in);
 
+        System.out.println("Ingrese su usuario");
+        usuario = leer.next();//pablo
+        System.out.println("Ingrese su contraseña");
+        password = leer.next();
+        /**
+         * ==
+         * !=
+         * >
+         * <
+         * >=
+         * <=
+         *
+         */
+        if (usuario_Original.equals(usuario))//OscarGamer = pablo
+        {
+            System.out.println("Sesion iniciada");
+        }
+        if (usuario != usuario)
+        {
+            System.out.println("Valio chetos ppodgfpokkfdpogfd");
+        }
+
+
+        System.out.println("Mi usuario es: "+ usuario + " Mi contraseña es: "+password);
         //Seguridad
         System.out.println("Como se llamara el producto? ");
         producto = leer.next();
@@ -34,22 +58,7 @@ public class Main {
         System.out.println("Descripcion del producto");
         descripcion = leer.next();
 
-        System.out.println("Ingrese su usuario");
-        usuario = leer.next();
-        System.out.println("Ingrese su contraseña");
-        password = leer.next();
 
-        if (usuario == usuario);
-        {
-            System.out.println("Sesion iniciada");
-        }
-        if (usuario != usuario)
-        {
-            System.out.println("Valio chetos ppodgfpokkfdpogfd");
-        }
-
-
-        System.out.println("Mi usuario es: "+ usuario + " Mi contraseña es: "+password);
 
 
 
