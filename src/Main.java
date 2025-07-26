@@ -1,3 +1,4 @@
+import javax.swing.plaf.IconUIResource;
 import java.util.Scanner;
 
 public class Main {
@@ -11,7 +12,60 @@ public class Main {
         double precio2 = 0.0; //10.5, 25.5, 13.5
         String descripcion;//abcABC123
 
-        String usuario_Original = "OscarGamer";
+        Scanner leer = new Scanner(System.in);
+
+        int limite = 5;
+        int inicio = 1;
+        while(inicio <= limite)//1 <= 5
+        {
+            int numeroMisterioso = 12;
+            int numero;
+            System.out.println("Ingrese el numero");
+            numero = leer.nextInt();
+            if(numeroMisterioso == numero)//12 = 12
+            {
+                System.out.println("Exito encontraste el numero misterioso");
+                break;
+            }
+            else
+            {
+                inicio++;//1 2 3
+                System.out.println("No encontraste el numero misterios");
+            }
+            System.out.println("numero de intento N°: " + inicio);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        String usuario_Original = "oscargamer";
         String password_Original = "oscar111";
 
         String usuario ;
@@ -20,12 +74,12 @@ public class Main {
         //oscar111
 
         //tienes que hacer datos de entrada y salida
-        Scanner leer = new Scanner(System.in);
 
+        //
         System.out.println("Ingrese su usuario");
-        usuario = leer.next();//pablo
+        usuario = leer.next().toLowerCase();//pablo
         System.out.println("Ingrese su contraseña");
-        password = leer.next();
+        password = leer.next().toLowerCase();
         /**
          * ==
          * !=
@@ -43,6 +97,8 @@ public class Main {
         {
             System.out.println("Valio chetos ERROR AL INICIAR SESION");
         }
+        // aumentar al datos de entrada OSCARGamer igual al oscargamer
+        // aplicar el tolowercase en lodos los datos de entrada
 
 
         System.out.println("Mi usuario es: "+ usuario + " Mi contraseña es: "+password);
