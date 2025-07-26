@@ -38,24 +38,19 @@ public class Main {
         usuario = leer.next();
         System.out.println("Ingrese su contraseña");
         password = leer.next();
+
+        if (usuario == usuario);
+        {
+            System.out.println("Sesion iniciada");
+        }
+        if (usuario != usuario)
+        {
+            System.out.println("Valio chetos ppodgfpokkfdpogfd");
+        }
+
+
         System.out.println("Mi usuario es: "+ usuario + " Mi contraseña es: "+password);
 
-        // If
-        // ==
-        // >
-        // >
-        // >=
-        // <=
-        // !=
-        // &&  and todo tiene que cumplir
-        // || or uno de ellos debe cumplir
-        // validacion del usuario y password
-        // error de datos
-        // inicio de sesion correcto
-        // guardar git y en github
-
-        // ver un video de base datos con txt o excel
-        // inicio de sesion y registro
 
 
 
