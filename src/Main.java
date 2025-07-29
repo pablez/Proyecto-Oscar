@@ -89,17 +89,22 @@ public class Main {
 
 
         int galletas = 100;
-        while (galletas 100 >= 1);
-
-        System.out.println(15%2);
-        if(15%2 == 0)
+        while (galletas >= 1)
         {
-            System.out.println("Es par");
-        }else
-        {
-            System.out.println("Es impar");
+            //usuario && contraseña
+            if(galletas%2 == 0)
+            {
+                System.out.println(galletas + " Es par");
+            }else
+            {
+                System.out.println(galletas+" Es impar");
+            }
+            galletas--;
         }
-galletas--;
+        // investigar como guardar datos en un txt en java
+
+
+
 
 
 
