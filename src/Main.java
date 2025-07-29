@@ -86,6 +86,11 @@ public class Main {
         // 99  es impar
         // 98 es par
         // ...
+
+
+        int galletas = 100;
+        while (galletas 100 >= 1);
+
         System.out.println(15%2);
         if(15%2 == 0)
         {
@@ -94,7 +99,7 @@ public class Main {
         {
             System.out.println("Es impar");
         }
-
+galletas--;
 
 
 
