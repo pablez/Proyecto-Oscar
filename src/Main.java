@@ -13,9 +13,8 @@ public class Main {
         String descripcion;//abcABC123
 
         Scanner leer = new Scanner(System.in);
+        /*
 
-        int limite = 5;
-        int inicio = 1;
         while(inicio <= limite)//1 <= 5
         {
             int numeroMisterioso = 12;
@@ -34,6 +33,7 @@ public class Main {
             }
             System.out.println("numero de intento N°: " + inicio);
         }
+        */
 
 
 
@@ -67,15 +67,54 @@ public class Main {
 
         String usuario_Original = "oscargamer";
         String password_Original = "oscar111";
-
-        String usuario ;
+        String usuario;//pablo
         String password;
-        //OscarGamer
-        //oscar111
 
-        //tienes que hacer datos de entrada y salida
+        int oportunidad = 5;
 
-        //
+        while(oportunidad >= 1)//0 >= 1
+        {
+            System.out.println("HOla");
+            oportunidad--;//5-4-3-2-1-0
+        }
+        //1. inicio y limite ++
+        //2. inicio y 5  ++
+        //3. oportunidad y 1 --
+
+        // ejercicio 3. 100
+        // 100 es par
+        // 99  es impar
+        // 98 es par
+        // ...
+        System.out.println(15%2);
+        if(15%2 == 0)
+        {
+            System.out.println("Es par");
+        }else
+        {
+            System.out.println("Es impar");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         System.out.println("Ingrese su usuario");
         usuario = leer.next().toLowerCase();//pablo
         System.out.println("Ingrese su contraseña");
