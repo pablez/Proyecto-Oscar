@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         int precio = 0;
-        String producto;
+        String producto = "";
         boolean estado = true;// true o false {0, 1}
         int cantidad; //0123 -1-2-3
         double precio2 = 0.0; //10.5, 25.5, 13.5
@@ -49,7 +49,14 @@ public class Main {
             System.out.println("Valio chetos ERROR AL INICIAR SESION");
         }
 
-
+        String cosas = "productos.txt";
+        FileWriter Escritor2 = new FileWriter(cosas, true);
+        System.out.println("Cual es el nombre del producto" + producto);
+        producto = leer.next();
+        System.out.println("Cual es el precio del producto" + precio);
+        precio = leer.nextInt();
+        Escritor2.write(producto + "," + precio + "\n" );
+        Escritor2.close();
 
 
 
