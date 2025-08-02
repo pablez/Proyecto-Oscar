@@ -81,7 +81,7 @@ public class Main {
                 System.out.println("Opcion no es correcta, Ingresar datos del menu 1-3");
         }
 
-        // tarea de CLase #9 es crear el menu y el switch de los productos
+        // tarea de CLase #9 es crear el menu y el switch de los productos y datos de entrada y salida y guardar datos al txt
 
 
 
