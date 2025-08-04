@@ -25,6 +25,20 @@ public class Main {
         System.out.println("Ingrese su contraseña");
         password = leer.next();
 
+        String datos;
+        System.out.println("cuenta d usuarios");
+
+        System.out.println("registrar usuario");
+        System.out.println("Inicio de sesion");
+        System.out.println("Salir");
+        System.out.println("Seleccione una opcion");
+        datos = ller
+
+
+
+
+
+
         // producto
         // nombre y precio
         // 3 datos
