@@ -42,6 +42,7 @@ public class Main {
                 FileWriter escritor = new FileWriter(archivo, true);
                 // escribir o guardar los datos en el txt
                 escritor.write(nombre + "," + numero + "," + email + "," + password + "\n");
+
                 // terminar de escribir
                 escritor.close();
                 // Muestra de exito
