@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         // 2 variables lo pongas fuera cancha pero accesible para todos
-        String archivo = "usuario.txt";
+        String archivoUsuario = "usuario.txt";
         String archivoProducto = "producto.txt";
 
         String nombre="";
@@ -38,15 +38,12 @@ public class Main {
                 System.out.println("Ingrese su contraseña");
                 password = leer.next();
 
-                //Codigo de Guardar datos a al txt
-                FileWriter escritor = new FileWriter(archivo, true);
-                // escribir o guardar los datos en el txt
-                escritor.write(nombre + "," + numero + "," + email + "," + password + "\n");
 
-                // terminar de escribir
+                FileWriter escritor = new FileWriter(archivoUsuario, true);
+                escritor.write(nombre + "," + numero + "," + email + "," + password + "\n");
                 escritor.close();
-                // Muestra de exito
                 System.out.println("Usuario se registro exitosamente");
+
                 break;
 
             case 2:
@@ -56,23 +53,66 @@ public class Main {
                 System.out.println("Ingresar su contraseña");
                 password= leer.next();
 
-                Scanner lectorArchivo = new Scanner(new File(archivo));
-                while(lectorArchivo.hasNextLine())
-                {
-                    String linea = lectorArchivo.nextLine();//Andres,7895412,andres@gmail.com,andres123
-                    String[] datos = linea.split(",");//[Andres][7895412][andres@gmail.com][andres123]
+                //Scanner leer2 = new Scanner(System.in);
 
+                Scanner lectorArchivo = new Scanner(new File(archivoUsuario));//archivoUsuario.txt
+                if(!lectorArchivo.hasNextLine())//falso
+                {
+                    System.out.println("No hay usuarios en la base de datos");
+                }
+                while(lectorArchivo.hasNextLine())//verdad
+                {
+                    String linea = lectorArchivo.nextLine();//"Andres,7895412,andres@gmail.com,andres123"
+                    String[] datos = linea.split(",");//[Andres][7895412][andres@gmail.com][andres123]
+                                                    //array      [0]      [1]        [2]             [3]
+                                                    //length      1        2          3               4
                     if(datos.length >= 4 && datos[2].equals(email) && datos[3].equals(password))
                     {
                         System.out.println("Inicio de sesion exitoso");
-                        break;
+                        System.out.println("------------Menu de Productos------------");
+                        System.out.println("1. Ver Produtos");
+                        System.out.println("2. Agregar Productos");
+                        System.out.println("3. Cerrar sesion");
+                        int opcion2 = leer.nextInt();
+                        switch (opcion2)
+                        {
+                            case 1:
+                                System.out.println("-------Lista de Productos------");
+                                File lectorArchivo2 = new  File(archivoProducto);
+                                if(!lectorArchivo2.exists())
+                                {
+                                    System.out.println("No hay productos para ver :(");
+                                }else{
+                                    File archivoProductos = new File(archivoProducto);
+                                    Scanner lectorArchivo3 = new Scanner(archivoProductos);
+                                    while(lectorArchivo3.hasNextLine())
+                                    {
+                                        String linea2 = lectorArchivo3.nextLine();
+                                        String[] datosProductos = linea.split(",");
+                                        if(datosProductos.length == 4)
+                                        {
+                                            System.out.println("Nombre: "+datosProductos[0]);
+                                            System.out.println("Precio: "+datosProductos[1]);
+                                            System.out.println("Cantidad: "+datosProductos[2]);
+                                            System.out.println("Descripción: "+datosProductos[3]);
+                                        }
+                                    }
+                                }
+
+                                break;
+                            case 2:
+                                //agregar o guardar los productos
+                                // nombre, precio, cantidad y descripcicon
+                                break;
+                            case 3:
+                                break;
+                        }
                     }
                     else
                     {
                         System.out.println("Error de inicio de sesion");
                     }
                 }
-
                 break;
 
             case 3:
