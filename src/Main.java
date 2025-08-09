@@ -4,6 +4,8 @@ import java.util.Scanner;
 import java.io.IOException;
 
 public class Main {
+    private static String String;
+
     public static void main(String[] args) throws IOException {
 
         int precio = 0;
@@ -32,7 +34,8 @@ public class Main {
         System.out.println("Inicio de sesion");
         System.out.println("Salir");
         System.out.println("Seleccione una opcion");
-        datos = ller
+        String archivo;
+        datos = 
 
 
 
@@ -44,7 +47,7 @@ public class Main {
         // 3 datos
         //
         // se crea el archivo
-        String archivo = "usuario.txt";
+        String; archivo = "usuario.txt";
         // se crea nuestro ayudante
         FileWriter escritor = new FileWriter(archivo, true);
         // escribir o guardar los datos en el txt
@@ -71,8 +74,8 @@ public class Main {
         precio = leer.nextInt();
         Escritor2.write(producto + "," + precio + "\n" );
         Escritor2.close();
-
-
+        //
+        
 
 
 
