@@ -1,19 +1,19 @@
-import javax.swing.plaf.IconUIResource;
 import java.io.File;
+
+import javax.swing.plaf.IconUIResource;
 import java.io.FileWriter;
 import java.util.Scanner;
 import java.io.IOException;
 
 public class Main {
-
-    static Scanner leer = new Scanner(System.in);
+    private static String String;
 
     public static void main(String[] args) throws IOException {
 
         // 2 variables lo pongas fuera cancha pero accesible para todos
         String archivoUsuario = "usuario.txt";
         String archivoProducto = "producto.txt";
-
+        Scanner leer = new Scanner(System.in);
         String nombre="";
         String numero="";
         String email="";
@@ -127,12 +127,77 @@ public class Main {
 
 
 
-        int precio = 0;
-        String producto = "";
-        boolean estado = true;// true o false {0, 1}
-        int cantidad; //0123 -1-2-3
-        double precio2 = 0.0; //10.5, 25.5, 13.5
-        String descripcion;//abcABC123
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        int oportunidad = 5;
+
+        while(oportunidad >= 1)//0 >= 1
+        {
+            System.out.println("HOla");
+            oportunidad--;//5-4-3-2-1-0
+        }
+        //1. inicio y limite ++
+        //2. inicio y 5  ++
+        //3. oportunidad y 1 --
+
+
+        // investigar como guardar datos en un txt excel csv en java
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
